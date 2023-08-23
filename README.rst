@@ -1,7 +1,7 @@
 Ouija config
 ============
 
-TBD
+Relay and proxy setup configuration with supervisord for `Ouija <https://github.com/neurophant/ouija>`_
 
 Features
 --------
@@ -18,8 +18,8 @@ Requirements
 * Python 3.11+
 * Ouija 1.2.3+
 
-Prerequisites (Ubuntu)
-----------------------
+Install prerequisites (Ubuntu)
+------------------------------
 
 .. code-block:: bash
 
@@ -34,21 +34,20 @@ Prerequisites (Ubuntu)
     source .env/bin/activate
     pip install ouija
     # edit your settings and secrets at /var/ouija-config/config/
+    sudo cp ouija-config/supervisord/supervisord.conf /etc/supervisor/supervisord.conf
 
-Relay (Ubuntu)
---------------
+Install as relay (Ubuntu)
+-------------------------
 
 .. code-block:: bash
 
-    sudo cp conf/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
-    sudo cp conf/supervisord.conf /etc/supervisor/supervisord.conf
+    sudo cp ouija-config/supervisord/ouija-relay.conf /etc/supervisor/conf.d/ouija-relay.conf
     sudo systemctl restart supervisor.service
 
-Proxy (Ubuntu)
---------------
+Install as proxy (Ubuntu)
+-------------------------
 
 .. code-block:: bash
 
-    sudo cp conf/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
-    sudo cp conf/supervisord.conf /etc/supervisor/supervisord.conf
+    sudo cp ouija-config/supervisord/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
     sudo systemctl restart supervisor.service
