@@ -30,18 +30,19 @@ Install prerequisites (Ubuntu)
 
     cd /var
     git clone https://github.com/neurophant/ouija-config.git
+    cd ouija-config
     python3.11 -m venv .env
     source .env/bin/activate
     pip install ouija
     # edit your settings and secrets at /var/ouija-config/config/
-    sudo cp ouija-config/supervisord/supervisord.conf /etc/supervisor/supervisord.conf
+    sudo cp supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 
 Install as relay (Ubuntu)
 -------------------------
 
 .. code-block:: bash
 
-    sudo cp ouija-config/supervisord/ouija-relay.conf /etc/supervisor/conf.d/ouija-relay.conf
+    sudo cp supervisor/ouija-relay.conf /etc/supervisor/conf.d/ouija-relay.conf
     sudo systemctl restart supervisor.service
 
 Install as proxy (Ubuntu)
@@ -49,5 +50,5 @@ Install as proxy (Ubuntu)
 
 .. code-block:: bash
 
-    sudo cp ouija-config/supervisord/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
+    sudo cp supervisor/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
     sudo systemctl restart supervisor.service
