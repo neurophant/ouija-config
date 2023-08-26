@@ -21,7 +21,7 @@ Requirements
 ------------
 
 * Python 3.11+
-* Ouija 1.3.0+
+* Ouija 1.3.1+
 
 Install prerequisites (Ubuntu)
 ------------------------------
