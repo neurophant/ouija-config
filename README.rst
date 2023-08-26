@@ -6,7 +6,12 @@ Relay and proxy setup configuration with supervisord for `Ouija <https://github.
 Features
 --------
 
-Ouija hides TCP traffic in encrypted TCP/UDP traffic between relay and proxy servers
+* Easy to install, configure and use
+* TCP/UDP tunneling
+* Pluggable traffic ciphers
+* Pluggable traffic entropy control
+
+Ouija hides TCP traffic in encrypted TCP/UDP tunnel between relay and proxy servers
 
 .. image:: https://raw.githubusercontent.com/neurophant/ouija-config/main/ouija.png
     :alt: TCP/UDP tunneling
@@ -16,7 +21,7 @@ Requirements
 ------------
 
 * Python 3.11+
-* Ouija 1.2.3+
+* Ouija 1.3.0+
 
 Install prerequisites (Ubuntu)
 ------------------------------
