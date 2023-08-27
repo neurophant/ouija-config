@@ -41,6 +41,7 @@ Install prerequisites (Ubuntu)
     pip install ouija
     # edit your settings and secrets at /var/ouija-config/config/
     sudo cp supervisor/supervisord.conf /etc/supervisor/supervisord.conf
+
     # to serve PAC via nginx
     sudo apt install nginx
     mkdir /var/www
