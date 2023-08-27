@@ -57,3 +57,15 @@ Install as proxy (Ubuntu)
 
     sudo cp supervisor/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
     sudo systemctl restart supervisor.service
+
+Install nginx PAC to relay (Ubuntu)
+-----------------------------------
+
+.. code-block:: bash
+
+    sudo apt update
+    sudo apt install nginx
+    mkdir /var/www
+    cp nginx/nginx.conf /etc/nginx/nginx.conf
+    cp nginx/proxy.pac /var/www/proxy.pac
+    sudo systemctl restart nginx
