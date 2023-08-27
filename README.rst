@@ -1,7 +1,7 @@
 Ouija config
 ============
 
-Relay and proxy setup configuration with supervisord for `Ouija <https://github.com/neurophant/ouija>`_
+Relay and proxy setup configuration with supervisor and nginx for `Ouija <https://github.com/neurophant/ouija>`_
 
 Features
 --------
