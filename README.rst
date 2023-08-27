@@ -41,6 +41,9 @@ Install prerequisites (Ubuntu)
     pip install ouija
     # edit your settings and secrets at /var/ouija-config/config/
     sudo cp supervisor/supervisord.conf /etc/supervisor/supervisord.conf
+    # to serve PAC via nginx
+    sudo apt install nginx
+    mkdir /var/www
 
 Install as relay (Ubuntu)
 -------------------------
@@ -58,14 +61,11 @@ Install as proxy (Ubuntu)
     sudo cp supervisor/ouija-proxy.conf /etc/supervisor/conf.d/ouija-proxy.conf
     sudo systemctl restart supervisor.service
 
-Install nginx PAC to relay (Ubuntu)
------------------------------------
+Install nginx PAC (Ubuntu)
+--------------------------
 
 .. code-block:: bash
 
-    sudo apt update
-    sudo apt install nginx
-    mkdir /var/www
     cp nginx/nginx.conf /etc/nginx/nginx.conf
     cp nginx/proxy.pac /var/www/proxy.pac
     sudo systemctl restart nginx
