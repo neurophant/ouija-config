@@ -1,6 +1,10 @@
 Ouija config
 ============
 
+.. warning::
+
+    **DEPRECATED**: This project is no longer maintained. Please use `Gouija <https://github.com/neurophant/gouija>`_ instead.
+
 Relay and proxy setup configuration with supervisor and nginx for `Ouija <https://github.com/neurophant/ouija>`_
 
 Features
