@@ -1,9 +1,18 @@
-Ouija config
-============
+THIS PROJECT IS DEPRECATED
+==========================
 
 .. warning::
 
-    **DEPRECATED**: This project is no longer maintained. Please use `Gouija <https://github.com/neurophant/gouija>`_ instead.
+    **This project is no longer maintained!**
+
+    Please use the new Go implementation: `Gouija <https://github.com/neurophant/gouija>`_
+
+    **No new features or bug fixes will be added to this repository.**
+
+----
+
+Ouija config
+============
 
 Relay and proxy setup configuration with supervisor and nginx for `Ouija <https://github.com/neurophant/ouija>`_
 
